@@ -258,21 +258,25 @@
 .htmlIcon:hover {
     cursor: pointer;
     color: #F06529;
+    transition: .3s;
 }
 
 .cssIcon:hover {
     cursor: pointer;
     color: #2965F1;
+    transition: .3s;
 }
 
 .javaScriptIcon:hover {
     cursor: pointer;
     color: #F0DB4F;
+    transition: .3s;
 }
 
 .reactIcon:hover {
     cursor: pointer;
     color: #61DBFB;
+    transition: .3s;
 }
 
 .programmingList > ul > li > i {
@@ -303,6 +307,7 @@
 .adobeIcon:hover {
     cursor: pointer;
     color: #FF0000;
+    transition: .3s;
 }
 
 .toolList > ul > li > i {
@@ -380,41 +385,90 @@
 }
 
 /* Projects */
-.projectContainer {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    background-color: rgb(0, 0, 0, .8);
-    
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
+.card {
+    background-color: black !important;
+    height: 100%;
 }
 
-.projectsTitle {
-    padding-left: 20px;
+.firstCard {
+    animation: fadeInStatic ease 1s;
+    -webkit-animation: fadeInStatic ease 1s;
+}
+
+.secondCard {
+    animation: fadeInStatic ease 2s;
+    -webkit-animation: fadeInStatic ease 2s;
+}
+
+.thirdCard {
+    animation: fadeInStatic ease 3s;
+    -webkit-animation: fadeInStatic ease 3s;
+}
+
+.fourthCard {
+    animation: fadeInStatic ease 4s;
+    -webkit-animation: fadeInStatic ease 4s;
+}
+
+.rowTop {
+    margin-bottom: 30px;
+}
+
+.cardBody {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cardBody > h3 {
     font-family: 'Odibee Sans', cursive;
-    font-size: 100px;
-    letter-spacing: 3px;
+    font-size: 34px;
+    letter-spacing: 1px;
     color: #04BFAD;
 }
 
-
-.projectList {
-    display: flex;
-    justify-content: center;
-    padding: 0 20px;
+.cardBody > p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
 }
 
-.project {
-    margin-right: 30px;
+.cardBody > span > a > button {
+    padding: 5px 15px; 
+    border: 2px solid #D507D9;
+    border-radius: 20px;
+    background-color: #D507D9;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
 }
 
-.project:hover {
+.cardBody > span > a > button:hover {
+    border: 2px solid #04BFAD;
+    background-color: #04BFAD;
+    transition: .3s ease;
+}
+
+.cardBody > span > a > button:focus {
+    outline: none;
+}
+
+.demoBtn {
+    margin-right: 10px;
+}
+
+.card:hover>.cardImg {
     cursor: pointer;
-    opacity: .8;
+    opacity: .3;
+    transition: .5s ease;
 }
 
-.weatherApp {
-    margin-right: 0;
+.card:hover>.cardBody {
+    cursor: pointer;
+    opacity: 1;
+    transition: .5s ease;
 }
 
 /* Contact */
@@ -524,4 +578,55 @@
         opacity: 1; 
         margin-top: 0;
     }
+}
+
+@keyframes fadeInStatic {
+    0% { 
+        opacity: 0;
+
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInStatic {
+    0% { 
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1; 
+    }
+}
+
+/* Media Layout */
+@media screen and (max-width: 760px) { 
+    .mainContainer {
+        display: block;
+    }
+
+    .sideCol {
+        width: 100%;
+        height: 10%;
+    }
+
+    .mainCol {
+        width: 100%;
+        height: 90%
+    }
+
+    .logoCol {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoRow {
+        margin-right: 40px;
+    }
+    
+    .navIcons > ul > li {
+        display: inline-flex;
+    }
+
 }

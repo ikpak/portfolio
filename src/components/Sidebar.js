@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 export default function Sidebar() {
     return (
         <div className="nav">
-            <Col>
+            <Col className="logoCol">
                 <Row className="logoRow">
                     <NavLink 
                         to="/" 

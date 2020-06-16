@@ -41,7 +41,7 @@ export default function Skills() {
                                 </ul>
                             </div>
                             <div className="toolList">
-                                <h2>Design Tools:</h2>
+                                <h2>Design:</h2>
                                 <ul>
                                     <li className="adobeIcon">
                                         <i class="fab fa-adobe"></i>
