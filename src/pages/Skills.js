@@ -68,6 +68,11 @@ export default function Skills() {
                                 <h2>Education:</h2>
                                 <ul>
                                     <li>
+                                        <h3>Full Stack Web Development Course</h3>
+                                        <h4>CoderSchool | Vietnam</h4>
+                                        <p>July 2020</p>
+                                    </li>
+                                    <li>
                                         <h3>Fashion Design & Pattern Certificate</h3>
                                         <h4>Vantan Design Institute | Japan</h4>
                                         <p>March 2018</p>

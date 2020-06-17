@@ -373,15 +373,15 @@
 }
 
 .educationList > ul > li > h3 {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .educationList > ul > li > h4 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .educationList > ul > li > p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Projects */
@@ -482,78 +482,28 @@
     -webkit-animation: fadeIn ease 2s;
 }
 
-.contactTitle {
-    display: flex;
-    justify-content: center;
-}
-
-.contactTitle > h1 {
+.contactCol > h1 {
+    text-align: center;
     font-family: 'Odibee Sans', cursive;
     font-size: 100px;
     letter-spacing: 3px;
     color: #04BFAD;
 }
 
-.user {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+.contactCol > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 20px;
 }
 
-.user > input {
-    font-family: 'Roboto Condensed', sans-serif;
-    width: 44%;
-    height: 50px;
-    border: none;
+.contactCol > ul > li {
+    margin-bottom: 10px;
+    color: white;
 }
 
-.nameInput {
-    margin-right: 10px;
-}
-
-.subject { 
-    display: flex;
-    justify-content: center;
-}
-
-.subject > input {
-    font-family: 'Roboto Condensed', sans-serif;
-    width: 90%;
-    height: 50px;
-    margin-bottom: 15px;
-}
-
-.message {
-    display: flex;
-    justify-content: center;
-}
-
-.message > input {
-    font-family: 'Roboto Condensed', sans-serif;
-    width: 90%;
-    height: 150px;
-    margin-bottom: 30px;
-}
-
-.submitBtn {
-    display: flex;
-    justify-content: center;
-}
-
-.submitBtn > button {
-    padding: 10px 30px;
-    background-color: transparent;
-    border-color: #04BFAD;
+.contactCol > ul > li > span > i {
     color: #04BFAD;
-    font-family: 'Odibee Sans', cursive;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-.submitBtn > button:hover {
-    color: #0D0D0D;
-    background-color: #D507D9;
-    border: 2px solid #D507D9;
+    margin-right: 15px;
 }
 
 /* Animations */
