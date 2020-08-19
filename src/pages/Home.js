@@ -8,7 +8,7 @@ export default function Home() {
             <Container className="mainVisCont">
                 <div className="mainText">
                     <h1>ILONA PAK</h1>
-                    <h2>Full Stack Web Developer | UI / UX Designer</h2>
+                    <h2>Full Stack Web Developer</h2>
                     <NavLink to="/contact" style={{textDecoration: 'none'}}>
                         <button className="contactBtn">CONTACT</button>
                     </NavLink>
