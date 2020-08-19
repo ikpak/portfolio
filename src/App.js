@@ -30,7 +30,7 @@ function App() {
       </div>
 
       <div className="mainCol">
-        {navOpen == false ? (
+        {navOpen === false ? (
           <i className="fas fa-bars" onClick={() => openNav()}></i>
         ) : (
           <i className="fas fa-times" onClick={() => closeNav()}></i>
