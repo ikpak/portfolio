@@ -6,7 +6,7 @@ export default function Projects() {
     <div className="main">
       <Container>
         <Row className="rowTop">
-          <Col>
+          <Col sm={6} xs={12} className="cardCol">
             <Card className="card firstCard" style={{ border: "none" }}>
               <Card.Img src="../chocobo.png" className="cardImg" />
               <Card.Body className="cardBody">
@@ -26,8 +26,27 @@ export default function Projects() {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
+          <Col sm={6} xs={12} className="cardCol">
             <Card className="card secondCard" style={{ border: "none" }}>
+              <Card.Img src="../weatherapp.png" className="cardImg" />
+              <Card.Body className="cardBody">
+                <h3>WEATHER APP</h3>
+                <p>Weather forecast for cities all over the world.</p>
+                <span>
+                  <a href="https://ikpak-weather-app.netlify.app/">
+                    <button className="demoBtn">Live Demo</button>
+                  </a>
+                  <a href="https://github.com/ikpak/Weather-App/">
+                    <button>GitHub</button>
+                  </a>
+                </span>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={6} xs={12} className="cardCol">
+            <Card className="card thirdCard" style={{ border: "none" }}>
               <Card.Img src="../itviec.png" className="cardImg" />
               <Card.Body className="cardBody">
                 <h3>IT VIEC</h3>
@@ -43,39 +62,20 @@ export default function Projects() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Card className="card thirdCard" style={{ border: "none" }}>
-              <Card.Img src="../movieapp.png" className="cardImg" />
+          <Col sm={6} xs={12} className="cardCol">
+            <Card className="card fourthCard" style={{ border: "none" }}>
+              <Card.Img src="../arcan.png" className="cardImg" />
               <Card.Body className="cardBody">
-                <h3>MOVIE APP</h3>
+                <h3>ARCAN</h3>
                 <p>
-                  A movie browser app that displays movie ratings and other
-                  information.
+                  Final project was created for Arcan nightclub venue in
+                  Ho Chi Minh City. It received 1st place in final demo presentation.
                 </p>
                 <span>
-                  <a href="https://week-4-movie-app.netlify.app/">
+                  <a href="https://arcan.netlify.app/">
                     <button className="demoBtn">Live Demo</button>
                   </a>
-                  <a href="https://github.com/ikpak/Week-4-Movie-App">
-                    <button>GitHub</button>
-                  </a>
-                </span>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="card fourthCard" style={{ border: "none" }}>
-              <Card.Img src="../weatherApp.png" className="cardImg" />
-              <Card.Body className="cardBody">
-                <h3>WEATHER APP</h3>
-                <p>Weather forecast for cities all over the world.</p>
-                <span>
-                  <a href="https://ikpak-weather-app.netlify.app/">
-                    <button className="demoBtn">Live Demo</button>
-                  </a>
-                  <a href="https://github.com/ikpak/Weather-App/">
+                  <a href="https://github.com/initech-cs/Arcan-fe-IlonaPak">
                     <button>GitHub</button>
                   </a>
                 </span>

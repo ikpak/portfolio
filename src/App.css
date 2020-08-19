@@ -14,8 +14,52 @@
 /* Sidebar Navigation */
 .sideCol {
     height: 100%;
-    width: 5%;
-    padding: 0 !important;
+    margin-left: 0;
+    width: 70px;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 760px) {
+    .mainContainer {
+        height: 100%; 
+    }
+
+    .fa-bars {
+        display: block !important;
+        position: fixed;
+        z-index: 2;
+        font-size: 30px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .fa-times {
+        display: block !important;
+        position: fixed;
+        z-index: 2;
+        font-size: 20px;
+        padding-top: 30px;
+        padding-left: 32px;
+    }
+
+    .sideCol {
+        width: 0px;
+        overflow: hidden;
+        position: fixed;
+        z-index: 1;
+        transition: 0.5s;
+        padding: 0;
+    }
+}
+
+.fa-bars {
+    display: none;
+    color: white;
+}
+
+.fa-times {
+    display: none;
+    color: white;
 }
 
 .nav {
@@ -122,6 +166,23 @@
 }
 
 /* Home */
+@media screen and (max-width: 760px) {
+    .mainVisCont {
+        height: 100vh;
+        align-items: center;
+    }
+
+    .mainText > h1 {
+        font-size: 140px !important;
+    }
+
+    .mainText > h2 {
+        margin-top: 5px !important;
+        font-size: 14px !important;
+        color: white !important;
+    }
+}
+
 .mainVisCont {
     display: flex;
     justify-content: flex-end;
@@ -170,6 +231,18 @@
 }
 
 /* About */
+@media screen and (max-width: 760px) {
+    .mainCol {
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .about {
+        width: 95% !important;
+        margin-top: 120px;
+    }
+}
+
 .about {
     background-color: rgb(0, 0, 0, .8);
     padding: 10px 10px;
@@ -191,6 +264,38 @@
 }
 
 /* Skills */
+@media screen and (max-width: 760px){
+    .skills {
+        width: 95% !important;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .skillsCol > div > h1 {
+        font-size: 70px !important;
+    }
+
+    .languageList > h2 {
+        font-size: 14px !important;
+    }
+
+    .languageList > ul {
+        font-size: 16px !important;
+    }
+
+    .programmingList > h2 {
+        font-size: 14px !important;
+    }
+
+    .programmingList > ul > li > i {
+        font-size: 30px !important;
+    }
+
+    .experienceCol > div > h1 {
+        font-size: 70px !important;
+    }
+}
+
 .skills {
     background-color: rgb(0, 0, 0, .8);
     padding: 10px 0;
@@ -277,6 +382,11 @@
     cursor: pointer;
     color: #61DBFB;
     transition: .3s;
+}
+
+.nodeIcon:hover {
+    cursor: pointer;
+    color: #68A063;
 }
 
 .programmingList > ul > li > i {
@@ -385,6 +495,35 @@
 }
 
 /* Projects */
+@media screen and (max-width: 760px) {
+    .rowTop {
+        margin-top: 60px;
+        margin-bottom: 0px !important;
+    }
+
+    .cardCol {
+        margin-bottom: 20px;
+    }
+
+    .cardBody {
+        width: 100%;
+    }
+
+    .cardBody > h3 {
+        font-size: 30px !important; 
+    }
+
+    .cardBody > p {
+        font-size: 12px !important;
+    }
+
+    .cardBody > span > a > button {
+        padding: 5px 15px !important;
+        font-size: 12px;
+    }
+}
+
+
 .card {
     background-color: black !important;
     height: 100%;
@@ -472,6 +611,18 @@
 }
 
 /* Contact */
+@media screen and (max-width: 760px) {
+    .contactCont {
+        height: 100vh !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .contactCol > h1 {
+        font-size: 80px !important;
+    }
+}
+
 .contactCol {
     width: 450px !important;
     padding-top: 10px;
@@ -547,36 +698,4 @@
     100% { 
         opacity: 1; 
     }
-}
-
-/* Media Layout */
-@media screen and (max-width: 760px) { 
-    .mainContainer {
-        display: block;
-    }
-
-    .sideCol {
-        width: 100%;
-        height: 10%;
-    }
-
-    .mainCol {
-        width: 100%;
-        height: 90%
-    }
-
-    .logoCol {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logoRow {
-        margin-right: 40px;
-    }
-    
-    .navIcons > ul > li {
-        display: inline-flex;
-    }
-
 }
