@@ -239,13 +239,17 @@
 
     .about {
         width: 95% !important;
-        margin-top: 120px;
+        margin-top: 50px;
+    }
+
+    .aboutText > div {
+        font-size: 14px;
     }
 }
 
 .about {
     background-color: rgb(0, 0, 0, .8);
-    padding: 10px 10px;
+    padding: 10px;
     
     animation: fadeIn ease 2s;
     -webkit-animation: fadeIn ease 2s;
@@ -261,6 +265,36 @@
 .aboutText > div {
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
+}
+
+.likesList {
+    margin-top: 30px;
+}
+
+.likesList > h2 {
+    font-size: 18px;
+    color: #595959;
+}
+
+.likesList > ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    display: inline-flex;
+}
+
+.likesList > ul > li {
+    font-size: 26px;
+    margin-right: 40px;
+}
+
+.likesList > ul > li:hover {
+    color: #D507D9;
+    cursor: pointer;
+}
+
+.likesList > ul > li > div {
+    font-size: 12px;
 }
 
 /* Skills */
