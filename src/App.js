@@ -11,7 +11,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   const [navOpen, setNavOpen] = useState(false);
-  const [navWidth, setNavWidth] = useState({ width: "0px" });
+  const [navWidth, setNavWidth] = useState({ width: "80px" });
 
   const openNav = () => {
     setNavWidth({ width: "80px" });
